@@ -5,7 +5,7 @@ class ApplicationController < ActionController::API
 
   respond_to :json
 
-  ## 
+  ##
   # User Authentication
   # Authenticates the user with OAuth2 Resource Owner Password Credentials Grant
   def authenticate_user_from_token!
@@ -20,7 +20,7 @@ class ApplicationController < ActionController::API
 
   private
 
-  def authenticate_with_auth_token auth_token 
+  def authenticate_with_auth_token auth_token
     unless auth_token.include?(':')
       authentication_error
       return
@@ -37,7 +37,7 @@ class ApplicationController < ActionController::API
     end
   end
 
-  ## 
+  ##
   # Authentication Failure
   # Renders a 401 error
   def authentication_error
