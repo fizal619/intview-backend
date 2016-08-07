@@ -43,7 +43,11 @@ class ApplicationsController < ApplicationController
   ##################################################################
 
   def destroy
-    application = Application.find(params[:id])
+    #protected by authentication?
+    id = request.headers['Authorization'].split(':')[0]
+    user = User.find(id)
+
+    application = user.applications.find(params[:id])
     application.destroy
 
     render json: {status: 'success'}
