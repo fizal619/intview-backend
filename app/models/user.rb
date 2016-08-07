@@ -1,9 +1,12 @@
 class User < ApplicationRecord
+
+  has_many :applications
+
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :recoverable, :validatable
 
-  after_create :update_access_token!  
+  after_create :update_access_token!
 
   validates :username, presence: true
   validates :email, presence: true
@@ -14,5 +17,5 @@ class User < ApplicationRecord
     self.access_token = "#{self.id}:#{Devise.friendly_token}"
     save
   end
-  
+
 end
