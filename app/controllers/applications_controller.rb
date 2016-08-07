@@ -20,4 +20,12 @@ class ApplicationsController < ApplicationController
 
     render json: {status: 'success'}
   end
+
+  def destroy
+    application = Application.find(params[:id])
+    application.destroy
+
+    render json: {status: 'success'}
+  end
+
 end
