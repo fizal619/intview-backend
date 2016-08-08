@@ -53,4 +53,5 @@ View my wireframes in the Imgur album.
 
 * [This guide](http://fancypixel.github.io/blog/2015/01/28/react-plus-flux-backed-by-rails-api/) helped me understand how to deal with using rails as a API Server as well as dealing with CORS.
 
+* https://developer.ibm.com/answers/questions/199673/what-is-the-best-way-to-integrate-watson-services.html
 

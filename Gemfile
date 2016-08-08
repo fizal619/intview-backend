@@ -6,6 +6,7 @@ gem 'devise'
 gem 'pg'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'thin'
+gem 'excon'
 
 group :development, :test do
   gem 'faker'
