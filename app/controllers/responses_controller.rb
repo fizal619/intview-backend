@@ -5,12 +5,21 @@ class ResponsesController < ApplicationController
   def create
     application = Application.find(params['application_id'])
 
-    Response.create({
+
+    res = Response.new({
       name: params['name'],
       email: params['email'],
-      # personaility_index: 'hardcoded for now',
       application: application
       })
+
+    ##########
+    # WATSON CODE
+
+    res['personality_index'] = 'hardcoded for now'
+
+    ##########
+
+    res.save
 
     render json: {status: 'success'}
   end
