@@ -56,8 +56,13 @@ class ApplicationsController < ApplicationController
   ##################################################################
 
   def show
+    application =  Application.find(params[:id])
+
+    #sanitize the data
+    cleaned = {title: application.title, questions: application.questions}
+
     # send the appication data
-    render json:  Application.find(params[:id])
+    render json: cleaned
   end
 
 end

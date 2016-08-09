@@ -55,3 +55,4 @@ View my wireframes in the Imgur album.
 
 * https://developer.ibm.com/answers/questions/199673/what-is-the-best-way-to-integrate-watson-services.html
 
+* https://themeteorchef.com/snippets/react-router-basics/

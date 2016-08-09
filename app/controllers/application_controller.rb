@@ -1,9 +1,10 @@
 class ApplicationController < ActionController::API
   include AbstractController::Translation
 
+  respond_to :json
+
   before_action :authenticate_user_from_token!
 
-  respond_to :json
 
   ##
   # User Authentication
