@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   devise_for :user, only: []
 
   resources 'applications', only: [:create, :destroy, :index, :show]
-  resources 'responses', only: [:create, :index]
+  resources 'responses'
 
   namespace :v1, defaults: { format: :json } do
   	resources :users, only: [:create]

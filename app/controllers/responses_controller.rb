@@ -1,10 +1,10 @@
 class ResponsesController < ApplicationController
-
-  skip_before_action :authenticate_user_from_token!, only: [:create]
+  skip_before_action :authenticate_user_from_token!, only: [:create, :options]
 
   def create
+    print "PARAMS!"
+    pp params
     application = Application.find(params['application_id'])
-
 
     res = Response.new({
       name: params['name'],
