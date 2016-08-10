@@ -27,7 +27,7 @@ class ApplicationsController < ApplicationController
   ##################################################################
 
   def create
-    #find the user who's token we got, then save an application.
+    #find the user whose token we got, then save an application.
     id = request.headers['Authorization'].split(':')[0]
     user = User.find(id)
 
@@ -58,7 +58,7 @@ class ApplicationsController < ApplicationController
   def show
     application =  Application.find(params[:id])
 
-    #sanitize the data
+    #sanitize? the data
     cleaned = {title: application.title, questions: application.questions}
 
     # send the appication data
