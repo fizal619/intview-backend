@@ -31,12 +31,12 @@ The backend will be done in **Ruby on Rails** and the frontend will be a **React
 
 ### User Stories
 
-* As a user I would like to create **unique** job applications, that can be applied to via a unique link. 
+* As a user I would like to create **unique** job applications, that can be applied to via a **unique link**. 
 * As a user I would like to view a list of job applications I created.
 * As a user I would view the list of applicants for a job.
 * As a user I would like to approve one applicant and that would make the job application link inactive. 
 * As a user I want to define expiration dates for the applications.
-* As a guest I would like to fill out an application form and have my response saved for the emplyer to view.  
+* As a guest I would like to fill out an application form and have my response saved for the emplyer to view.✓  
 
 
 
@@ -46,6 +46,10 @@ View my wireframes in the Imgur album.
 
 [Here!](http://imgur.com/a/WmFYl)
 
+
+###TODO
+
+* 400 if application id doesn't exist. /application/:id
 
 ---
 
