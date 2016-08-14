@@ -7,6 +7,7 @@ gem 'pg'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'thin'
 gem 'excon'
+gem 'jquery-rails'
 gem 'rack-cors', :require => 'rack/cors'
 
 group :production do
