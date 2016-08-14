@@ -6,16 +6,19 @@ class ResponsesController < ApplicationController
     pp params
     application = Application.find(params['application_id'])
 
+    #params 'answers' is saved to the content column, but shouldn't be confuded with the 'content' we're feeding into watson. This is probably bad naming convention.
+
     res = Response.new({
       name: params['name'],
       email: params['email'],
-      application: application
+      application: application,
+      content: params['content']
       })
 
     ########## https://developer.ibm.com/answers/questions/199673/what-is-the-best-way-to-integrate-watson-services.html
     # WATSON CODE
 
-    content = params['content']
+    content = JSON.parse(params['content']).join(' ')
 
     countContent = content.split(' ')
 

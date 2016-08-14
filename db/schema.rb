@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160807155820) do
+ActiveRecord::Schema.define(version: 20160814162908) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -31,6 +31,7 @@ ActiveRecord::Schema.define(version: 20160807155820) do
     t.integer  "application_id"
     t.datetime "created_at",        null: false
     t.datetime "updated_at",        null: false
+    t.text     "content"
     t.index ["application_id"], name: "index_responses_on_application_id", using: :btree
   end
 
