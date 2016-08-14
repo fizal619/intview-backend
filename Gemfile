@@ -9,6 +9,10 @@ gem 'thin'
 gem 'excon'
 gem 'rack-cors', :require => 'rack/cors'
 
+group :production do
+  gem 'rails_12factor'
+end
+
 group :development, :test do
   gem 'faker'
   gem 'byebug'
