@@ -9,6 +9,8 @@ gem 'thin'
 gem 'excon'
 gem 'jquery-rails'
 gem 'rack-cors', :require => 'rack/cors'
+gem 'actioncable' , '5.0.0'
+
 
 group :production do
   gem 'rails_12factor'

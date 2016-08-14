@@ -186,6 +186,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  actioncable (= 5.0.0)
   active_model_serializers (~> 0.8.3)
   byebug
   coffee-rails
