@@ -23,6 +23,7 @@ class ResponsesController < ApplicationController
     countContent = content.split(' ')
 
     if (countContent.size < 550 || nil)
+      puts "WORDS: " + countContent.size.to_s
       render json: {status: 'null'}
     else
       response = Excon.post("https://gateway.watsonplatform.net/personality-insights/api/v2/profile",
