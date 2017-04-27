@@ -3,9 +3,11 @@
 
 [LIVE VERSION](https://intview.herokuapp.com/)
 
+Login – test@example.com : 12341234
+
 ![](https://media.giphy.com/media/Ytc8QLBqbkBoc/giphy.gif)
 
-##Introduction 
+## Introduction 
 The interview process is something we are all familiar with, it can vary from company to company; but certain trends remain the same. There's a *technical* side and a *cultural* side.
 
 While the technical side can be mostly straight forward / cough tabs vs spaces cough /. The cultural side can have some tricky variables to consider, from *personal* biases the interviewer may have to whether or not it is Taco Tuesday at their company. 
@@ -43,7 +45,7 @@ Frontend Routes:
 
 
 
-####Diagram 
+#### Diagram 
 
 ![](http://i.imgur.com/fQOmyP7.png)
 
@@ -66,7 +68,7 @@ View my wireframes in the Imgur album.
 [Here!](http://imgur.com/a/WmFYl)
 
 
-###TODO
+### TODO
 
 * Validation, as well as user feedback.
 * Quantifying GRIT, Temperment, etc.
@@ -74,7 +76,7 @@ View my wireframes in the Imgur album.
 
 ---
 
-###Approach Taken
+### Approach Taken
 
 Lets start with my many pitfalls. Entering this project I didn't have a clear idea of what I wanted to do. I had an ideal, a problem I thought needed to be solved. So I maped out an app That I thought I could manage in a week. I was wrong. The technology stack I chose turned out to be more of an obstacle for me than the actual problem itself. 
 
